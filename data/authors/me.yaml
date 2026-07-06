@@ -1,0 +1,32 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: 함명인 간사
+  given: Myung-in
+  family: Ham
+  pronunciation: Myung-in Ham
+  pronouns: he/him
+status:
+  icon: "🙏"
+role: 사역 간사 (전도 및 돌봄 담당)
+bio: 미국 뉴저지 아이하나 교회에서 한 영혼을 천하보다 귀하게 여기며 전도와 돌봄 사역을 감당하고 있습니다.
+affiliations:
+  - name: 미국 뉴저지 아이하나 교회
+    url: ""
+links:
+  - icon: at-symbol
+    url: mailto:your-email@example.com
+    label: E-mail Me
+  - icon: brands/x
+    url: https://x.com/GoOwnable
+  - icon: brands/instagram
+    url: https://www.instagram.com/
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/
+  - icon: academicons/cv
+    url: uploads/resume.pdf
+    label: Download my resume
+  - icon: rss
+    url: ./blog/index.xml
+    label: Subscribe to my blog via RSS feed
