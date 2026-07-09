@@ -14,14 +14,17 @@ sections:
         url: "#contact"
         icon: hero/paper-airplane
         style: gradient
+      image:
+        filename: ministry_hero.png
+        alt: 함명인 간사 사역 홈페이지
     design:
       spacing:
         padding: ["6rem", 0, "6rem", 0]
       background:
-        color: "#f5f2eb" /* Warm beige background */
+        color: "#f5f2eb"
         gradient:
           type: radial
-          start: "rgba(90, 115, 86, 0.15)" /* Sage green glow */
+          start: "rgba(90, 115, 86, 0.15)"
           end: "transparent"
           position: "50% -10%"
           shape: ellipse
@@ -38,7 +41,7 @@ sections:
             신학적 소양을 바탕으로 교회의 일반 사역을 신실하게 감당하며, 낙심하고 길 잃은 이들에게 복음의 기쁜 소식을 전하고 있습니다.
             
             '땅끝까지 이르러 증인되리라'는 말씀을 삶으로 증명해 내는 신실한 동역자가 되기를 소망합니다.
-          image: "about-profile.jpg"
+          image: "about-profile.png"
     design:
       spacing:
         padding: ["5rem", 0, "5rem", 0]
