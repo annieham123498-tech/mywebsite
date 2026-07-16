@@ -119,7 +119,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   footer:
     # Footer style variant
-    style: centered # minimal | columns | centered
+    style: minimal # minimal | columns | centered
     show_logo: false
     show_title: true
     show_tagline: true

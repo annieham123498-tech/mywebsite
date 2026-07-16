@@ -1,0 +1,48 @@
+{{/* Hugo Blox Builder Contact Block - Custom Korean Ministry Form */}}
+{{ $block := .block }}
+{{ $page := .page }}
+
+{{ $id := $block.id | default "contact" }}
+{{ $css_class := "" }}
+{{ with $block.design }}{{ $css_class = .css_class | default "" }}{{ end }}
+
+<section class="py-16 px-4 {{ $css_class }}" id="{{ $id }}">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-10">
+      {{ with $block.content.title }}
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-2">{{ . }}</h2>
+      {{ end }}
+      {{ with $block.content.subtitle }}
+        <p class="text-lg font-medium text-emerald-700 mb-4">{{ . }}</p>
+      {{ end }}
+      {{ with $block.content.text }}
+        <p class="text-base text-gray-600 leading-relaxed max-w-2xl mx-auto">{{ . | markdownify }}</p>
+      {{ end }}
+    </div>
+
+    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+      <form name="contact" method="POST" data-netlify="true" class="space-y-6">
+        <div>
+          <label for="name" class="block text-sm font-medium text-gray-700 mb-1">이름</label>
+          <input type="text" name="name" id="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition duration-150 ease-in-out" placeholder="성함을 입력해주세요">
+        </div>
+
+        <div>
+          <label for="contact-info" class="block text-sm font-medium text-gray-700 mb-1">연락처 또는 이메일</label>
+          <input type="text" name="contact-info" id="contact-info" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition duration-150 ease-in-out" placeholder="연락받으실 번호 또는 이메일을 입력해주세요">
+        </div>
+
+        <div>
+          <label for="message" class="block text-sm font-medium text-gray-700 mb-1">기도 제목 및 사역 문의 내용</label>
+          <textarea name="message" id="message" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition duration-150 ease-in-out" placeholder="기도하고 나누고 싶은 내용을 자세히 적어주세요"></textarea>
+        </div>
+
+        <div class="text-center pt-2">
+          <button type="submit" class="inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-700 hover:to-teal-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500 transition duration-150 ease-in-out shadow-sm cursor-pointer">
+            사역 및 돌봄 문의하기
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
